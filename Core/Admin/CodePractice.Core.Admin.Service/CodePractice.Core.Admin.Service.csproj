@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\CodePractice.Framework.Dto\CodePractice.Framework.Dto.csproj" />
+    <ProjectReference Include="..\..\..\Framework\CodePractice.Framework.Security\CodePractice.Framework.Security.csproj" />
+    <ProjectReference Include="..\..\..\Framework\CodePractice.Framework.Tools\CodePractice.Framework.Tools.csproj" />
+    <ProjectReference Include="..\CodePractice.Core.Admin.Domain\CodePractice.Core.Admin.Domain.csproj" />
+    <ProjectReference Include="..\CodePractice.Core.Admin.Repository\CodePractice.Core.Admin.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
