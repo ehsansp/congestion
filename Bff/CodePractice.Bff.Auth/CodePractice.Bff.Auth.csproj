@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\..\Framework\CodePractice.Framework.Security\CodePractice.Framework.Security.csproj" />
+    <ProjectReference Include="..\..\Framework\CodePractice.Framework.Tools\CodePractice.Framework.Tools.csproj" />
   </ItemGroup>
 
 </Project>

@@ -14,6 +14,7 @@ builder.Services.AddDbContext<AdminContext>(cfg =>
 {
     cfg.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging();
 });
+builder.Services.AddCors();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,7 +25,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+DefaultConnection.Set(builder.Configuration);
 app.UseAuthorization();
 
 app.MapControllers();

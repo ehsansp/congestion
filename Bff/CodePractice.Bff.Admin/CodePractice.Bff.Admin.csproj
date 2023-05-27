@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\Product\CodePractice.Product.ApplicationService\CodePractice.Product.ApplicationService.csproj" />
     <ProjectReference Include="..\..\Framework\CodePractice.Framework.Functions\CodePractice.Framework.Functions.csproj" />
     <ProjectReference Include="..\..\Framework\CodePractice.Framework.Security\CodePractice.Framework.Security.csproj" />
     <ProjectReference Include="..\..\Framework\CodePractice.Framework.Tools\CodePractice.Framework.Tools.csproj" />
