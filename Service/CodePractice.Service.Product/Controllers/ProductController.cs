@@ -1,6 +1,7 @@
 ﻿using CodePractice.Framework.Dto;
 using CodePractice.Framework.Tools;
 using CodePractice.Product.ApplicationService.Features.Person.Commands.CreatePerson;
+using CodePractice.Product.ApplicationService.Features.Person.Queries.List;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -26,6 +27,12 @@ namespace CodePractice.Service.Product.Controllers
             return FuncResult.CreateOkResult(res);
         }
 
-        
+        [HttpGet()]
+        [ValidationFilter]
+        public async Task<FuncResult> List([FromQuery] GetProductsQuery query, CancellationToken token)
+        {
+            var res = await _mediator.Send(query, token);
+            return FuncResult.CreateGetResult(res.list, res.count);
+        }
     }
 }

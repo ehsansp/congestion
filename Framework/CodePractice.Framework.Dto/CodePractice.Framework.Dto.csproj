@@ -12,6 +12,7 @@
 
 	<ItemGroup>
 	  <Folder Include="AdminService\Menue\" />
+	  <Folder Include="ProductService\" />
 	</ItemGroup>
 
 </Project>

@@ -1,11 +1,27 @@
+using CodePractice.Framework.Caching;
+using CodePractice.Framework.Security;
+using CodePractice.Framework.Tools;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<HttpClientWrapper>();
+builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddScoped<IToken, Token>();
+builder.Services.AddScoped<ICacheService, CacheService>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+var Nodes = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile($"BalancerNodes.json", optional: false, reloadOnChange: false);
+var build = Nodes.Build();
 
 var app = builder.Build();
 

@@ -1,0 +1,39 @@
+{
+  "Instance": {
+    "Users": [
+      "https://tmpuserservice.hamrahtelco.ir/",
+      "https://tmpuserservice.hamrahtelco.ir/"
+    ],
+    "Goods": [
+      "https://localhost:7068/"
+    ],
+    "Sales": [
+      "https://localhost:7234/",
+      "https://localhost:7234/"
+    ],
+    "Files": [
+      "https://tmpfileservice.hamrahtelco.ir/"
+    ],
+    "Authorizes": [
+      "https://tmpadminservice.hamrahtelco.ir/"
+    ],
+    "Admins": [
+      "https://tmpadminservice.hamrahtelco.ir/"
+    ],
+    "Prices": [
+      "https://tmppriceservice.hamrahtelco.ir/"
+    ],
+    "Crms": [
+      "https://tmpcrmservice.hamrahtelco.ir/"
+    ],
+    "Wallets": [
+      "https://localhost:7286/"
+    ],
+    "Gamfications": [
+      "http://localhost:5004/"
+    ]
+
+  }
+
+
+}

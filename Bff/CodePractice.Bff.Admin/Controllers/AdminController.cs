@@ -13,6 +13,7 @@ using Newtonsoft.Json;
 
 namespace CodePractice.Bff.Admin.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
     public class AdminController : ControllerBase
     {
@@ -38,7 +39,7 @@ namespace CodePractice.Bff.Admin.Controllers
             var ids = new ConcurrentBag<long>();
 
             
-            response = await _httpClientWrapper.PostAsync(Framework.Functions.StaticParams.CrmServiceURL, "api/product/add", command);
+            response = await _httpClientWrapper.PostAsync(Framework.Functions.StaticParams.GoodServiceURL, "api/product", command);
             return Ok(response);
 
         }
