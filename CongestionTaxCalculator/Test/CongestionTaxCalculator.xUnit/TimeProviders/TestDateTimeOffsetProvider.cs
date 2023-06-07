@@ -24,3 +24,4 @@ public class TestDateTimeOffsetProvider : IDateTimeOffsetProvider, IConfigurable
     }
 
     public DateTimeOffset UtcNow => _isManual ? _utcNow : DateTimeOffset.UtcNow;
+}

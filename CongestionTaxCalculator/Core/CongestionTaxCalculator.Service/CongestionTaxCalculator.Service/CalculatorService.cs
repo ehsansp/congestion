@@ -4,7 +4,7 @@ namespace CongestionTaxCalculator.Service;
 
 public class CalculatorService:ICalculatorService
 {
-    public int GetTax(Vehicle vehicle, DateTime[] dates)
+    public int GetTax(TollFreeVehicles vehicle, DateTime[] dates)
     {
         DateTime intervalStart = dates[0];
         int totalFee = 0;
@@ -31,18 +31,13 @@ public class CalculatorService:ICalculatorService
         return totalFee;
     }
 
-    public bool IsTollFreeVehicle(Vehicle vehicle)
+    public bool IsTollFreeVehicle(TollFreeVehicles vehicle)
     {
-        String vehicleType = vehicle.GetVehicleType();
-        return vehicleType.Equals(TollFreeVehicles.Motorcycle.ToString()) ||
-               vehicleType.Equals(TollFreeVehicles.Tractor.ToString()) ||
-               vehicleType.Equals(TollFreeVehicles.Emergency.ToString()) ||
-               vehicleType.Equals(TollFreeVehicles.Diplomat.ToString()) ||
-               vehicleType.Equals(TollFreeVehicles.Foreign.ToString()) ||
-               vehicleType.Equals(TollFreeVehicles.Military.ToString());
+        if(vehicle != TollFreeVehicles.Tractor) return false;
+        return true;
     }
 
-    public int GetTollFee(DateTime date, Vehicle vehicle)
+    public int GetTollFee(DateTime date, TollFreeVehicles vehicle)
     {
         if (IsTollFreeDate(date) || IsTollFreeVehicle(vehicle)) return 0;
 

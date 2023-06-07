@@ -1,6 +1,6 @@
 ﻿namespace CongestionTaxCalculator.Framework.Calculator;
 
-public class Motorbike : Vehicle
+public class Motorbike
 {
     public string GetVehicleType()
     {

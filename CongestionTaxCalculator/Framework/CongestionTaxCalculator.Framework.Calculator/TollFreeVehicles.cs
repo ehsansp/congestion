@@ -7,5 +7,6 @@ public enum TollFreeVehicles
     Emergency = 2,
     Diplomat = 3,
     Foreign = 4,
-    Military = 5
+    Military = 5,
+    Bus= 6
 }

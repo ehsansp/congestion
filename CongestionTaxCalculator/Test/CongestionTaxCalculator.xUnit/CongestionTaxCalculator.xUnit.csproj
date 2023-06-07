@@ -33,6 +33,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\CongestionTaxCalculator.Framework.Core.TimeProviders\CongestionTaxCalculator.Framework.Core.TimeProviders.csproj" />
+    <ProjectReference Include="..\..\Core\CongestionTaxCalculator.Service\CongestionTaxCalculator.Service\CongestionTaxCalculator.Service.csproj" />
     <ProjectReference Include="..\..\Framework\CongestionTaxCalculator.Framework.Calculator\CongestionTaxCalculator.Framework.Calculator.csproj" />
   </ItemGroup>
 
