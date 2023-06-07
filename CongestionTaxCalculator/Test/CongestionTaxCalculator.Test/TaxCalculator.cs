@@ -4,7 +4,7 @@ using System;
 namespace CongestionTaxCalculator.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class TaxCalculator
     {
         [TestMethod]
         public void TestMethod1()
