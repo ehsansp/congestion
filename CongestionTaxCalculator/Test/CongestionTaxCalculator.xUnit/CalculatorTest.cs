@@ -85,7 +85,22 @@ namespace CongestionTaxCalculator.xUnit
             dates = new[] { Convert.ToDateTime(changeableDateTime) };
 
             var result = _calculatorService.GetTax(TollFreeVehicles.Diplomat, dates);
-            result.Should().Be(168);
+            result.Should().Be(0);
+
+            result = _calculatorService.GetTax(TollFreeVehicles.Tractor, dates);
+            result.Should().Be(156);
+
+            result = _calculatorService.GetTax(TollFreeVehicles.Emergency, dates);
+            result.Should().Be(0);
+
+            result = _calculatorService.GetTax(TollFreeVehicles.Bus, dates);
+            result.Should().Be(0);
+
+            result = _calculatorService.GetTax(TollFreeVehicles.Foreign, dates);
+            result.Should().Be(0);
+
+            result = _calculatorService.GetTax(TollFreeVehicles.Military, dates);
+            result.Should().Be(0);
         }
     }
 }
