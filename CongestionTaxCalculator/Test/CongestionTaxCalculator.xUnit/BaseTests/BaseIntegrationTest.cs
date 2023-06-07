@@ -5,10 +5,13 @@ using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using CongestionTaxCalculator.Framework.Calculator;
 using CongestionTaxCalculator.Framework.Core.TimeProviders;
+using CongestionTaxCalculator.Service;
 using CongestionTaxCalculator.xUnit.TimeProviders;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
+using IVehicleService = CongestionTaxCalculator.Framework.Calculator.IVehicleService;
+using VehicleService = CongestionTaxCalculator.Framework.Calculator.VehicleService;
 
 namespace CongestionTaxCalculator.xUnit.BaseTests;
 
@@ -36,6 +39,8 @@ public class BaseIntegrationTest
                     var testDateTimeOffsetProvider = new TestDateTimeOffsetProvider();
                     services.AddSingleton<IDateTimeOffsetProvider>(testDateTimeOffsetProvider);
                     services.AddSingleton<IConfigurableDateTimeOffsetProvider>(testDateTimeOffsetProvider);
+                    services.AddSingleton<IVehicleService,VehicleService>();
+                    services.AddSingleton<ICalculatorService, CalculatorService>();
                 });
             });
         Configuration = Application.Server.Services.GetService<IConfiguration>()!;

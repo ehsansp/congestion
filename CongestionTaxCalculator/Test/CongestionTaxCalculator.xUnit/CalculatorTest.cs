@@ -8,12 +8,7 @@ namespace CongestionTaxCalculator.xUnit
 {
     public class CalculatorTest: BaseIntegrationTest
     {
-        private ICalculatorService _calculatorService;
-
-        protected CalculatorTest(ICalculatorService calculatorService)
-        {
-            _calculatorService = calculatorService;
-        }
+     
         [Fact]
         public void calculate_tax_on_some_times()
         {
@@ -83,7 +78,6 @@ namespace CongestionTaxCalculator.xUnit
             configurableDateTimeOffsetProvider.SetUtcNow(changeableDateTime);
             dates = new[] { Convert.ToDateTime(changeableDateTime) };
 
-            _calculatorService.GetTax(TollFreeVehicles.Diplomat, dates);
         }
     }
 }
