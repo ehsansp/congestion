@@ -1,7 +1,5 @@
-﻿namespace CongestionTaxCalculator.Framework.Calculator
+﻿namespace CongestionTaxCalculator.Framework.Calculator;
+public interface Vehicle
 {
-    public interface Vehicle
-    {
-        String GetVehicleType();
-    }
+    String GetVehicleType();
 }

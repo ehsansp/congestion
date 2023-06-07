@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.API
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.Framework.Calculator", "Framework\CongestionTaxCalculator.Framework.Calculator\CongestionTaxCalculator.Framework.Calculator.csproj", "{93FC9D73-9A9C-4B6F-B729-0F1263B0CB87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.Service", "Core\CongestionTaxCalculator.Service\CongestionTaxCalculator.Service.csproj", "{618371EA-BF7F-48C3-9E41-A09D683F4A31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.Service", "Core\CongestionTaxCalculator.Service\CongestionTaxCalculator.Service\CongestionTaxCalculator.Service.csproj", "{18B2925C-195E-4C2C-B690-887953D01D68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{93FC9D73-9A9C-4B6F-B729-0F1263B0CB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93FC9D73-9A9C-4B6F-B729-0F1263B0CB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93FC9D73-9A9C-4B6F-B729-0F1263B0CB87}.Release|Any CPU.Build.0 = Release|Any CPU
-		{618371EA-BF7F-48C3-9E41-A09D683F4A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{618371EA-BF7F-48C3-9E41-A09D683F4A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{618371EA-BF7F-48C3-9E41-A09D683F4A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{618371EA-BF7F-48C3-9E41-A09D683F4A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B2925C-195E-4C2C-B690-887953D01D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B2925C-195E-4C2C-B690-887953D01D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B2925C-195E-4C2C-B690-887953D01D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B2925C-195E-4C2C-B690-887953D01D68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,7 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{BD395B35-2E7F-4E11-8F8A-442B3A647880} = {99264556-F4C3-4969-A482-3E41038C1344}
 		{93FC9D73-9A9C-4B6F-B729-0F1263B0CB87} = {DC32C097-F8E5-4AF6-AF13-7C9EC67D3436}
-		{618371EA-BF7F-48C3-9E41-A09D683F4A31} = {9E21233E-29C2-40C2-929F-3E154EA748A5}
+		{18B2925C-195E-4C2C-B690-887953D01D68} = {9E21233E-29C2-40C2-929F-3E154EA748A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {363D5708-7642-458E-B6AF-CD8A36F164F5}
