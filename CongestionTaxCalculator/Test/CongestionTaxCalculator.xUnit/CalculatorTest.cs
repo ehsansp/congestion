@@ -2,19 +2,25 @@ using CongestionTaxCalculator.Framework.Calculator;
 using CongestionTaxCalculator.Service;
 using CongestionTaxCalculator.xUnit.BaseTests;
 using CongestionTaxCalculator.xUnit.TimeProviders;
+using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CongestionTaxCalculator.xUnit
 {
-    public class CalculatorTest: BaseIntegrationTest
+    public class CalculatorTest : BaseIntegrationTest
     {
-     
+        private ICalculatorService _calculatorService;
+
+        protected CalculatorTest(ICalculatorService calculatorService)
+        {
+            _calculatorService = calculatorService;
+        }
         [Fact]
         public void calculate_tax_on_some_times()
         {
             var configurableDateTimeOffsetProvider = Application.Services.GetService<IConfigurableDateTimeOffsetProvider>()!;
             DateTime[] dates;
-            var changeableDateTime = new DateTimeOffset(2013,1,14,21,0,0,TimeSpan.Zero);
+            var changeableDateTime = new DateTimeOffset(2013, 1, 14, 21, 0, 0, TimeSpan.Zero);
             configurableDateTimeOffsetProvider.SetUtcNow(changeableDateTime);
             dates = new[] { Convert.ToDateTime(changeableDateTime) };
 
@@ -78,6 +84,8 @@ namespace CongestionTaxCalculator.xUnit
             configurableDateTimeOffsetProvider.SetUtcNow(changeableDateTime);
             dates = new[] { Convert.ToDateTime(changeableDateTime) };
 
+            var result = _calculatorService.GetTax(TollFreeVehicles.Diplomat, dates);
+            result.Should().Be(168);
         }
     }
 }
