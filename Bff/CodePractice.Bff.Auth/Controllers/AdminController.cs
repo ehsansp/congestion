@@ -50,8 +50,8 @@ namespace CodePractice.Bff.Auth.Controllers
 
 
         [HttpGet]
-        [Route("api/Admin/Autorize")]
-        public async Task<Framework.Dto.FuncResult> Autorize([FromHeader] string token)
+        [Route("api/Admin/Authorize")]
+        public async Task<Framework.Dto.FuncResult> Authorize([FromHeader] string token)
         {
             Framework.Dto.FuncResult funcResult = new Framework.Dto.FuncResult();
             var User = Token.getUserModel(token);

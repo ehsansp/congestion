@@ -1,6 +1,8 @@
-﻿namespace CodePractice.Core.Admin.Domain.Entities;
+﻿using CodePractice.Framework.Domain.Entities;
 
-public partial class Menu
+namespace CodePractice.Core.Admin.Domain.Entities;
+
+public class Menu: AggregateRoot
 {
     public Menu()
     {
@@ -9,7 +11,6 @@ public partial class Menu
         UserMenus = new HashSet<UserMenu>();
     }
 
-    public int Id { get; set; }
     public int? ParentId { get; set; }
     public string? Title { get; set; }
     public string? Url { get; set; }

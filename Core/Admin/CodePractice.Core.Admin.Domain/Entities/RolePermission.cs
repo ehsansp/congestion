@@ -1,8 +1,9 @@
-﻿namespace CodePractice.Core.Admin.Domain.Entities;
+﻿using CodePractice.Framework.Domain.Entities;
 
-public partial class RolePermission
+namespace CodePractice.Core.Admin.Domain.Entities;
+
+public class RolePermission: AggregateRoot
 {
-    public int Id { get; set; }
     public int? RoleId { get; set; }
     public int? MenuId { get; set; }
 

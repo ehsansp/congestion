@@ -1,6 +1,8 @@
-﻿namespace CodePractice.Core.Admin.Domain.Entities;
+﻿using CodePractice.Framework.Domain.Entities;
 
-public partial class Role
+namespace CodePractice.Core.Admin.Domain.Entities;
+
+public class Role: AggregateRoot
 {
     public Role()
     {
@@ -8,7 +10,6 @@ public partial class Role
         UserRoles = new HashSet<UserRole>();
     }
 
-    public int Id { get; set; }
     public string? Title { get; set; }
 
     public virtual ICollection<RolePermission> RolePermissions { get; set; }

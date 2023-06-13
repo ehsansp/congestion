@@ -1,8 +1,9 @@
-﻿namespace CodePractice.Core.Admin.Domain.Entities;
+﻿using CodePractice.Framework.Domain.Entities;
 
-public partial class UserMenu
+namespace CodePractice.Core.Admin.Domain.Entities;
+
+public class UserMenu: AggregateRoot
 {
-    public int Id { get; set; }
     public int? UserId { get; set; }
     public int MenuId { get; set; }
 

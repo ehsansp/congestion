@@ -1,6 +1,8 @@
-﻿namespace CodePractice.Core.Admin.Domain.Entities;
+﻿using CodePractice.Framework.Domain.Entities;
 
-public partial class User
+namespace CodePractice.Core.Admin.Domain.Entities;
+
+public class User: AggregateRoot
 {
     public User()
     {
@@ -8,7 +10,6 @@ public partial class User
         UserRoles = new HashSet<UserRole>();
     }
 
-    public int Id { get; set; }
     public string? UserName { get; set; }
     public string? Password { get; set; }
     public bool? Active { get; set; }

@@ -11,41 +11,47 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{3BA6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{39A04877-8D1B-41DE-8D07-80608364F31E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Product.ApplicationService", "Core\Product\CodePractice.Product.ApplicationService\CodePractice.Product.ApplicationService.csproj", "{193D7B26-D701-429B-8A09-A3C4D8341CA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Product.ApplicationService", "Core\Product\CodePractice.Product.ApplicationService\CodePractice.Product.ApplicationService.csproj", "{193D7B26-D701-429B-8A09-A3C4D8341CA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Product.Domain", "Core\Product\CodePractice.Product.Domain\CodePractice.Product.Domain.csproj", "{46C2024F-B194-4A5C-9A49-47FE9957BD73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Product.Domain", "Core\Product\CodePractice.Product.Domain\CodePractice.Product.Domain.csproj", "{46C2024F-B194-4A5C-9A49-47FE9957BD73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Product.Repository", "Core\Product\CodePractice.Product.Repository\CodePractice.Product.Repository.csproj", "{EF50543A-20EA-4360-BB82-3271CA9FB14D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Product.Repository", "Core\Product\CodePractice.Product.Repository\CodePractice.Product.Repository.csproj", "{EF50543A-20EA-4360-BB82-3271CA9FB14D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Service.Product", "Service\CodePractice.Service.Product\CodePractice.Service.Product.csproj", "{80EBB035-99C6-41DC-A4DD-EE6A61D86E67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Service.Product", "Service\CodePractice.Service.Product\CodePractice.Service.Product.csproj", "{80EBB035-99C6-41DC-A4DD-EE6A61D86E67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Framework.Common", "Framework\CodePractice.Framework.Common\CodePractice.Framework.Common.csproj", "{92A91AB5-53C4-475F-94A0-2E7FCF6DF705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Framework.Common", "Framework\CodePractice.Framework.Common\CodePractice.Framework.Common.csproj", "{92A91AB5-53C4-475F-94A0-2E7FCF6DF705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Framework.Dto", "Framework\CodePractice.Framework.Dto\CodePractice.Framework.Dto.csproj", "{ED2C6FE4-C479-4CB6-9D60-F8CF5B71C3A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Framework.Dto", "Framework\CodePractice.Framework.Dto\CodePractice.Framework.Dto.csproj", "{ED2C6FE4-C479-4CB6-9D60-F8CF5B71C3A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Framework.Tools", "Framework\CodePractice.Framework.Tools\CodePractice.Framework.Tools.csproj", "{2BA8E712-369F-4F17-9A89-8FCA1108D4DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Framework.Tools", "Framework\CodePractice.Framework.Tools\CodePractice.Framework.Tools.csproj", "{2BA8E712-369F-4F17-9A89-8FCA1108D4DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bff", "Bff", "{BE105C61-68C3-4D6E-B40B-44CEAD36EAB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Bff.Auth", "Bff\CodePractice.Bff.Auth\CodePractice.Bff.Auth.csproj", "{307914BC-8D7E-429E-876C-4C780FF36D0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Bff.Auth", "Bff\CodePractice.Bff.Auth\CodePractice.Bff.Auth.csproj", "{307914BC-8D7E-429E-876C-4C780FF36D0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Bff.Admin", "Bff\CodePractice.Bff.Admin\CodePractice.Bff.Admin.csproj", "{1F5E7077-3F6F-4216-A3D8-01C9E162DF6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Bff.Admin", "Bff\CodePractice.Bff.Admin\CodePractice.Bff.Admin.csproj", "{1F5E7077-3F6F-4216-A3D8-01C9E162DF6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Framework.Security", "Framework\CodePractice.Framework.Security\CodePractice.Framework.Security.csproj", "{8D75A6FD-D346-4622-A981-2715912BCA10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Framework.Security", "Framework\CodePractice.Framework.Security\CodePractice.Framework.Security.csproj", "{8D75A6FD-D346-4622-A981-2715912BCA10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Framework.Caching", "Framework\CodePractice.Framework.Caching\CodePractice.Framework.Caching.csproj", "{A9AFA115-0508-4E84-B6D3-7B1A57B501A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Framework.Caching", "Framework\CodePractice.Framework.Caching\CodePractice.Framework.Caching.csproj", "{A9AFA115-0508-4E84-B6D3-7B1A57B501A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Framework.Functions", "Framework\CodePractice.Framework.Functions\CodePractice.Framework.Functions.csproj", "{F1DA464D-ADFC-4E41-9F8B-2EA9482ED3EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Framework.Functions", "Framework\CodePractice.Framework.Functions\CodePractice.Framework.Functions.csproj", "{F1DA464D-ADFC-4E41-9F8B-2EA9482ED3EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Service.Admin", "Service\CodePractice.Service.Admin\CodePractice.Service.Admin.csproj", "{81CEC909-412B-4F38-B746-F74FF53AB8D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Service.Admin", "Service\CodePractice.Service.Admin\CodePractice.Service.Admin.csproj", "{81CEC909-412B-4F38-B746-F74FF53AB8D0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{0F401E4E-D7ED-4832-B1EE-D551AE9185E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Core.Admin.Domain", "Core\Admin\CodePractice.Core.Admin.Domain\CodePractice.Core.Admin.Domain.csproj", "{5B5CCA66-E79F-47F8-99EE-D1237408E2B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Core.Admin.Domain", "Core\Admin\CodePractice.Core.Admin.Domain\CodePractice.Core.Admin.Domain.csproj", "{5B5CCA66-E79F-47F8-99EE-D1237408E2B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Core.Admin.Repository", "Core\Admin\CodePractice.Core.Admin.Repository\CodePractice.Core.Admin.Repository.csproj", "{3323CF50-7FF9-4A2A-ADD7-DADD59EBB746}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Core.Admin.Repository", "Core\Admin\CodePractice.Core.Admin.Repository\CodePractice.Core.Admin.Repository.csproj", "{3323CF50-7FF9-4A2A-ADD7-DADD59EBB746}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Core.Admin.Service", "Core\Admin\CodePractice.Core.Admin.Service\CodePractice.Core.Admin.Service.csproj", "{84C64B86-99F3-4674-A2CC-3FDA3AB38FD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePractice.Core.Admin.Service", "Core\Admin\CodePractice.Core.Admin.Service\CodePractice.Core.Admin.Service.csproj", "{84C64B86-99F3-4674-A2CC-3FDA3AB38FD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{94F07D72-88CC-45FB-AC41-1F10E26A9F50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{1216786A-A336-4CA4-BE7E-E3A07BAFC75F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePractice.Framework.Domain", "Framework\CodePractice.Framework.Domain\CodePractice.Framework.Domain.csproj", "{687B729C-2B73-4F07-B57F-C519F17E1B6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +123,10 @@ Global
 		{84C64B86-99F3-4674-A2CC-3FDA3AB38FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84C64B86-99F3-4674-A2CC-3FDA3AB38FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84C64B86-99F3-4674-A2CC-3FDA3AB38FD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{687B729C-2B73-4F07-B57F-C519F17E1B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687B729C-2B73-4F07-B57F-C519F17E1B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687B729C-2B73-4F07-B57F-C519F17E1B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687B729C-2B73-4F07-B57F-C519F17E1B6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +150,8 @@ Global
 		{5B5CCA66-E79F-47F8-99EE-D1237408E2B6} = {0F401E4E-D7ED-4832-B1EE-D551AE9185E2}
 		{3323CF50-7FF9-4A2A-ADD7-DADD59EBB746} = {0F401E4E-D7ED-4832-B1EE-D551AE9185E2}
 		{84C64B86-99F3-4674-A2CC-3FDA3AB38FD7} = {0F401E4E-D7ED-4832-B1EE-D551AE9185E2}
+		{1216786A-A336-4CA4-BE7E-E3A07BAFC75F} = {94F07D72-88CC-45FB-AC41-1F10E26A9F50}
+		{687B729C-2B73-4F07-B57F-C519F17E1B6B} = {08DBF817-249F-4154-8862-C5CB8CB47939}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3783583-9544-42E8-A147-D28E08EEF5FC}
