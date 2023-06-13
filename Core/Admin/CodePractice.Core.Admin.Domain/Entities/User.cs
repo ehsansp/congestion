@@ -20,3 +20,4 @@ public class User: AggregateRoot
     public virtual ICollection<UserMenu> UserMenus { get; set; }
     public virtual ICollection<UserRole> UserRoles { get; set; }
 }
+
